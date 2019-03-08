@@ -9,6 +9,11 @@ echo "[[ -z \$DISPLAY && \$XDG_VTNR -eq 1 ]] && exec startx" >> $HOME/.bashrc
 
 echo "Installing system tools..."
 sudo apt-get install gnome-terminal gnome-disk-utility -y
+sudo apt-get install python3-pip -y
+sudo apt-get update
+curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
+python3 get-pip.py --user
+pip3 install pycryptodome
 
 echo "Setting default shell to bash."
 sudo rm /bin/sh
