@@ -41,7 +41,7 @@ $network_ip = ""
 
 # this is the git repo to pull for the petalinux project. Note, once pulled this
 # should be forked to your own private repo
-$petalinux_git = "https://$USER:$PASS@github.com/UNO-NULLify/eCTF19"
+$petalinux_git = "git@github.com:UNO-NULLify/eCTF19"
 
 # A list of files to be copied to the VM. Each file will be placed at the same
 # path as the source file.
